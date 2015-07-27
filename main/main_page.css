@@ -1,0 +1,46 @@
+body {
+    background-color: white;
+}
+h1{
+	font-family:Sans-serif;
+	text-align:center;
+	padding-top:20px;
+}
+h2{
+	margin-left: 1%;
+}
+
+ h4, #ralph{
+	font-family:Sans-serif;
+	text-align:center;
+	padding: 0px;
+	margin: 0px;
+	}
+	
+#ralph{
+	padding-left:90px;
+	}
+	
+.option, form{
+	text-align: center;
+	list-style-type:none;
+	font-size: 2em;
+	margin-top: 10%;
+}
+
+a{
+	text-decoration: none;
+}
+
+a:hover{
+	color: black;
+	font-weight: bold;
+}
+#footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+	

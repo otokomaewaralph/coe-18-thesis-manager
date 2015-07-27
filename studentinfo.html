@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Information</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+		<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+		<script src="scripts/nav.js"></script>
+		<link rel="stylesheet" type="text/css" href="/main/main_page.css"></head>
+<body>
+
+<h1>Student Information</h1>
+<div class="align-center">
+						<ul class="nav nav-tabs">
+  							<li><a href="/home">Home</a></li>
+  							<li><a href="/student/list">Student List</a></li>
+  							<li><a href="/student/create">Create a Profile</a></li>
+						</ul>
+			</div>
+<form action='/student/{{student_list.key.id()}}' method='post'>
+    <input type='text' name='first_name' value='{{student_list.first_name}}' placeholder='first name'/>
+    <input type='text' name='last_name' value='{{student_list.last_name}}' placeholder='last name'/>
+    <input type='text' name='age' value='{{student_list.age}}' placeholder='age'/>
+</body>
+</html>

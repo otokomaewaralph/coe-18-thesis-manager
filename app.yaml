@@ -1,0 +1,20 @@
+# app.yaml = application config file
+
+application: main
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /main
+  static_dir: main
+  
+- url: /.*
+  script: main.app
+
+libraries:
+- name: webapp2
+  version: latest
+- name: jinja2
+  version: latest
